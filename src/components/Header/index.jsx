@@ -26,7 +26,7 @@ const Header = () => {
                     <Menu href='https://www.instagram.com/imotech.app/'>Fale Conosco</Menu>
                 </Row>
                 <Row>
-                    <MenuRight href='#'>Home</MenuRight>
+                    <MenuRight href='#'>Inicio</MenuRight>
                     <Button title="Entrar" />
                     <Button title="Cadastrar" />
                 </Row>
