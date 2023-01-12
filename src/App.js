@@ -9,6 +9,7 @@ import { Feed } from "./pages/feed"
 
 function App() {
   return (
+
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
