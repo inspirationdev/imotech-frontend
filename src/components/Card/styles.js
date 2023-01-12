@@ -2,9 +2,13 @@ import styled from 'styled-components'
 
 export const CardContainer = styled.div`
     width: 100%;
-    background-color: #3B4651;
+    background-color: #6A3B8B;
+    color: #FFF;
+    border-radius: 6px;
+    border: solid 1px;
     position: relative;
     margin-bottom: 24px;
+    margin: 15px auto;
 `
 
 export const ImageBackground = styled.img`

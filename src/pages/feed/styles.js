@@ -7,9 +7,11 @@ export const Container = styled.main`
     margin-top: 120px;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0px;
+
 `
 
 export const Title = styled.h2`
@@ -37,4 +39,17 @@ export const TextContent = styled.p`
     line-height: 22px;
 
     color: #FFF;
+`
+
+export const ContainerClientCard = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 80%;
+    margin: 30px auto;
+
+    p {
+        margin: 0;
+    }
 `

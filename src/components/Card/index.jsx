@@ -11,25 +11,23 @@ import {
     UserPicture
 } from './styles'
 
-const Card = () => {
+const Card = ({imageProfile = null, nameUser = "default user", documentsStatus = "default status", description = "default description", moreDescription = "default more user"}) => {
     return (
         <CardContainer>
             <ImageBackground />
             <Content>
                 <UserInfo>
-                    <UserPicture />
+                    <UserPicture src={imageProfile} />
                     <div>
-                        <h4>Edivaldo JR</h4>
-                        <p>Há 8 minutos</p>
+                        <h4>{nameUser}</h4>
+                        <p>{documentsStatus}</p>
                     </div>
                 </UserInfo>
                 <PostInfo>
-                    <h4>Projeto para blá blá bla...</h4>
-                    <p>Texto complementar...</p>
+                    <h4>{description}</h4>
                 </PostInfo>
                 <HasInfo>
-                    <h4>#HTML #CSS #JS</h4>
-                    <p>likes</p> 20
+                    <h4>{moreDescription}</h4>
                 </HasInfo>
             </Content>
         </CardContainer>
