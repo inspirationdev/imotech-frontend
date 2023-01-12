@@ -1,5 +1,4 @@
 import { Header } from '../../components/Header'
-import bannerImage from '../../assets/banner-principal.png'
 import { Button } from '../../components/Button'
 
 import {
