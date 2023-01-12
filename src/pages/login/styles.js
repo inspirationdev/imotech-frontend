@@ -10,6 +10,11 @@ export const Container = styled.main`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+            @media (max-width: 992px) 
+        {
+            flex-direction: column;
+            gap: 2 rem;
+        }
 `
 
 export const Wrapper = styled.div`
@@ -37,6 +42,13 @@ export const Title = styled.h2`
     line-height: 44px;
 
     color: #FFF;
+
+            @media (max-width: 992px) 
+        {
+            font-size: 24px;
+            text-align: center;
+            max-width: 320px;
+        }
 `
 
 export const TitleLogin = styled.p`
@@ -60,15 +72,32 @@ export const EsqueciText = styled.p`
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
-
-    color: #E5E044;
+    margin-bottom: 0;
+    color: #fff;
 `
 
-export const CriarText = styled.p`
+export const CriarText = styled.a`
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 19px;
 
-    color: #E23DD7;
+    color: #fff;
+`
+
+export const LinkLogarContainer = styled.div`
+
+    a {
+        min-width: 167px;
+        height: 33px;
+        background-color: #6A3B8B;
+        border-radius: 6px;
+        border: solid 1px #fff;
+        color: #FFF;
+        width: 100%;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 `

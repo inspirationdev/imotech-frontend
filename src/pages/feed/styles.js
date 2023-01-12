@@ -31,7 +31,8 @@ export const TextContent = styled.p`
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    width: 420px;
+    max-width: 420px;
+    width: 100%;
     margin-bottom: 20px;
     line-height: 22px;
 

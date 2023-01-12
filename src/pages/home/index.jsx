@@ -1,29 +1,44 @@
 import { Header } from '../../components/Header'
 import bannerImage from '../../assets/banner-principal.png'
-import { Button } from '../../components/Button'
+import {
+    Link
+} from "react-router-dom";
 
-import { Container, TextContent, Title, TitleHighlight } from './styles'
+import {
+    Container,
+    TextContent,
+    Title,
+    TitleHighlight,
+    LogoImg,
+    LinkHome,
+    LinkLogarContainer
+} from './styles'
 
 const Home = () => {
     return (
         <>
-            <Header/>
+            <Header />
             <Container>
                 <div>
                     <Title>
                         <TitleHighlight>
-                            Implemente
+                            Um, dois
                             <br />
                         </TitleHighlight>
-                        O seu futuro global agora
+                        pensou, vendeu
                     </Title>
                     <TextContent>
-                        Domine as tecnologias utilizadas pelas empresas mais inovadoras do mundo e encara seu novo desafio profissional, evoluindo em comunidade com os melhores experts
+                        Bem vindo a Imotech, acesse a nossa plataforma <LinkHome href='https://imotech.app/'>clicando aqui</LinkHome>
+                        <br />
+                        <br />
+                        Se for membro da Imotech, por favor fazer login clicando no botão abaixo
                     </TextContent>
-                    <Button title="Começar agora" variant="secondary" onClick={() => null}/>
+                    <LinkLogarContainer>
+                        <Link to="/login">Logar</Link>
+                    </LinkLogarContainer>
                 </div>
                 <div>
-                    <img src={bannerImage} alt="Imagem principal" />
+                    <LogoImg src={bannerImage} alt="Imagem principal" />
                 </div>
             </Container>
         </>

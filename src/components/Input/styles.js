@@ -4,7 +4,7 @@ export const InputContainer = styled.div`
     width: 100%;
     max-width: 275px;
     height: 30px;
-    border-bottom: 1px solid #3B3450;
+    border-bottom: 1px solid #fff;
 
     display: flex;
     align-items: center;
@@ -20,4 +20,6 @@ export const InputText = styled.input`
     color: #FFF;
     border: 0;
     height: 30px;
+    width: 100%;
+    max-width: 275px;
 `
